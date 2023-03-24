@@ -7,6 +7,7 @@ window.function = function (address) {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      return data;
+      let text = Json.parse(data)
+      return text;
     });
 }

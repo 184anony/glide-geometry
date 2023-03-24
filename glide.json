@@ -1,24 +1,14 @@
 [
   {
     "kind": "column",
-    "name": "Substring",
-    "description": "Extracts a substring out of a string. Both start and end indexes are optional. The end index is exclusive.",
-    "author": "Mark Probst <mark@glideapps.com>",
+    "name": "説明",
+    "description": "住所を緯度経度に変換します",
+    "author": "いやよ",
     "params": [
       {
-        "name": "string",
-        "displayName": "String",
+        "name": "address",
+        "displayName": "住所",
         "type": "string"
-      },
-      {
-        "name": "start",
-        "displayName": "Start index",
-        "type": "number"
-      },
-      {
-        "name": "end",
-        "displayName": "End index",
-        "type": "number"
       }
     ],
     "result": {

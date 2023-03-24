@@ -8,6 +8,6 @@ window.function = function (address) {
     .then(response => response.json())
     .then(data => {
       let text = Json.parse(data)
-      return text;
+      return text.geometry.coordinates;
     });
 }

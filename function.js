@@ -1,6 +1,6 @@
 window.function = function (address) {
 
-  address = address.value ?? "";
+  address = address.value;
 
   let url = 'https://msearch.gsi.go.jp/address-search/AddressSearch?q=' + address;
 

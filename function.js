@@ -1,5 +1,3 @@
-import fetch from "node-fetch"
-
 window.function = function(address) {
   
   address = address.value;

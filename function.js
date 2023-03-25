@@ -6,11 +6,9 @@ window.function = function(address) {
 
   let url = 'https://msearch.gsi.go.jp/address-search/AddressSearch?q=' + address;
   
-//   fetch(url)
-//     .then(response => response.json())
-//     .then(data => {
-//       return data;
-//     });
-  
-  return url;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      return data;
+    });
 }

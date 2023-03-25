@@ -1,14 +1,17 @@
-window.function = function (address) {
+import fetch from "node-fetch"
 
-  import fetch from "node-fetch"
+
+window.function = function (address) {
   
   address = address.value;
 
   let url = 'https://msearch.gsi.go.jp/address-search/AddressSearch?q=' + address;
   
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      return data;
-    });
+//   fetch(url)
+//     .then(response => response.json())
+//     .then(data => {
+//       return data;
+//     });
+  
+  return url;
 }

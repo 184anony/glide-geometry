@@ -1,6 +1,6 @@
 import fetch from "node-fetch"
 
-function geometry(address) {
+window.function = function(address) {
   
   address = address.value;
 

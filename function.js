@@ -4,10 +4,10 @@ window.function = function (address) {
 
   let url = 'https://msearch.gsi.go.jp/address-search/AddressSearch?q=' + address;
   
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      let text = Json.parse(data)
-      return text.geometry.coordinates;
-    });
+  let request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.send();
+  request.addEventListener("load", function () {
+    return this.responseText;
+  });
 }

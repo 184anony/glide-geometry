@@ -1,7 +1,7 @@
-import fetch from "node-fetch"
-
 window.function = function (address) {
 
+  import fetch from "node-fetch"
+  
   address = address.value;
 
   let url = 'https://msearch.gsi.go.jp/address-search/AddressSearch?q=' + address;

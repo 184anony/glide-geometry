@@ -1,4 +1,4 @@
-window.function = async function(address) {
+window.function = function(address) {
   
   address = address.value;
 
